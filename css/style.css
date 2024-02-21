@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    background-image: url(../img/fon3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.celebration_content {
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    color: white;
+    background-color:  rgb(23, 87, 20);
+    border-radius: 20px;
+    border: 2px solid white;
+    padding: 20px 50px;
+}
+
+.btn-block {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.btn {   
+ font-family: Arial, Helvetica, sans-serif; 
+  text-decoration: none; 
+  color: white; 
+  background-color: rgb(23, 87, 20);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.celebration_title{
+    animation: a 3s infinite;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+@keyframes a {
+0% {
+    transform: translateX(0);
+    color: rgb(255, 255, 255);
+    } 
+    33% {
+    transform: translateX(20px);  
+    color: red;
+    }
+    66% {
+    transform: translateX(20px); 
+    color: red;
+    }
+    100%{
+        transform: translateX(0);
+        color: rgb(255, 255, 255);
+    }
+
+}
